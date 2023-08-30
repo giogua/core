@@ -9,6 +9,8 @@ import secrets
 import aiohttp
 import pyatmo
 from pyatmo.const import ALL_SCOPES as NETATMO_SCOPES
+NETATMO_SCOPES.append("read_mhs1")
+NETATMO_SCOPES.append("write_mhs1")
 import voluptuous as vol
 
 from homeassistant.components import cloud
